@@ -40,14 +40,19 @@ document.write("Se ha convertido en "+ kel + " grados kelvin y " + far + " grado
 
 var dias = parseInt(prompt("Ingrese una cantidad de dias para convertir en años semanas y dias restantes"))
 
+//Se divide los dias entregados por los dias del año y se obtiene un valor entero
 const year = Math.floor(dias / 365)
+// El resto de dias se divide en semanas
 const semanas = Math.floor((dias % 365) / 7)
+//Se consigue el resto de dias sobrantes
 const diasrest = Math.floor((dias % 365) % 7)
 
+//Se muestra el resultado
 document.write(`<h4> ${dias} son los días a convertir </h4>`)
 document.write(`<p>Los años son ${year}, las semanas son ${semanas}, los dias son ${diasrest}</p>`)
 
 // 5.-
+//Se solicitan los 5 numeros
 
 alert("Ingrese 5 numeros para sumarlos y calcular el promedio")
 var valor1 = parseFloat(prompt("Ingrese el primer número"))
@@ -56,11 +61,12 @@ var valor3 = parseFloat(prompt("Ingrese el tercer número"))
 var valor4 = parseFloat(prompt("Ingrese el cuarto número"))
 var valor5 = parseFloat(prompt("Ingrese el quinto número"))
 
-
+//Sumatoria de los numeros
 var sumatotal = valor1 + valor2 + valor3 + valor4 + valor5
-
+//Promedio de los numeros
 var promedio = (valor1 + valor2 + valor3 + valor4 + valor5) / 5
 
+//Se muestra el resultado de ambas operaciónes
 document.write(`<h4>Los numeros son ${valor1} ${valor2} ${valor3} ${valor4} ${valor5}</h4>`)
 document.write(`<p>La suma total de los numeros es ${sumatotal}`)
 document.write(`<p>El promedio de los numeros ingresados es de ${promedio}`)
